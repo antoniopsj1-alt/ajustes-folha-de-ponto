@@ -1,0 +1,21 @@
+ANÁLISE DE FOLHA DE PONTO - COMO COLOCAR ONLINE
+
+Arquivos desta pasta
+  index.html ............................ a página (front-end). É um arquivo só.
+  Analise_Ponto_Marcela_Out2026.xlsx .... planilha de exemplo preenchida (Marcela, outubro/2026).
+  Modelo_Analise_Ponto_EM_BRANCO.xlsx ... a mesma planilha, vazia, para outros funcionários.
+
+Hospedagem
+  1) Envie o index.html para qualquer hospedagem de site estático
+     (GitHub Pages, Netlify, Cloudflare Pages, Google Firebase Hosting ou o seu servidor).
+     Não precisa de banco de dados nem de servidor com programação.
+  2) A página usa a biblioteca ExcelJS 4.4.0, carregada de cdnjs.cloudflare.com.
+     O usuário precisa de internet para baixar o Excel. Para funcionar sem CDN,
+     baixe o exceljs.min.js, coloque na mesma pasta e troque o endereço da linha <script src=...>.
+  3) Os dados digitados ficam só no navegador (localStorage) e nos arquivos
+     que o usuário baixar. Nada é enviado ao servidor (bom para a LGPD).
+     Para guardar histórico central de vários funcionários seria preciso um servidor com login e banco de dados.
+
+Observação
+  A folha ajustada é um documento de conferência. Guarde sempre a folha de ponto original
+  e confirme a regra de compensação com o RH/jurídico.
